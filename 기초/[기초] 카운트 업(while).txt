@@ -1,0 +1,14 @@
+// Q. 정수 start와 end가 주어질 때, start부터 end까지의 숫자를 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.
+
+class Solution {
+    public int[] solution(int start, int end) {
+        int[] answer = new int[end - start +1]; // 타입[]변수 = new 타입[길이];
+        int i = 0; // while문 시작 전에 변수 선언 먼저 해야함
+        while(start <= end){ // while (조건문)
+            answer[i] = start; //변수[인덱스] = 값; -> 인덱스 위치에 새로운 값 저장
+            start++;
+            i++;
+        }
+        return answer;
+    }
+}
