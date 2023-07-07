@@ -1,0 +1,17 @@
+// Q. 문자열 my_string과 문자 letter이 매개변수로 주어집니다. my_string에서 letter를 제거한 문자열을 return하도록 solution 함수를 완성해주세요.
+
+class Solution {
+    public String solution(String my_string, String letter) {
+        String answer = "";
+        int N = my_string.length();
+        char checkletter = letter.charAt(0); //  String letter를 char로 형변환(새로운 변수 checkletter로 선언)
+        char [] chList = my_string.toCharArray();
+        for (int i = 0; i < N; i++) {
+            if (checkletter != my_string.charAt(i)){ // checkletter가 my_string과 다를 때만            
+            System.out.println(my_string.charAt(i)); // my_string을 출력
+            answer += my_string.charAt(i); //중첩
+        }
+        }
+        return answer;
+    }
+}

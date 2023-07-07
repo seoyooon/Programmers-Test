@@ -1,0 +1,18 @@
+// Q. 문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string에 들어있는 각 문자를 n만큼 반복한 문자열을 return 하도록 solution 함수를 완성해보세요.
+
+
+class Solution {
+    public String solution(String my_string, int n) {
+        String answer = "";
+        int N = my_string.length(); // my_string 길이를 정수 변수 N으로 선언
+        char [] chList = my_string.toCharArray(); // my_string을 char 배열로 선언
+            for (int i = 0; i < N; i++) { 
+                for(int j = 0; j < n; j++) { 
+                System.out.println(my_string.charAt(i));
+                answer += my_string.charAt(i); 
+                    // 배열변수명.charAt(); : String으로 저장된 문자열 중에서 한글자만 선택해서 char타입으로 변환해주는  함수
+                }
+            }
+        return answer;
+    }
+}

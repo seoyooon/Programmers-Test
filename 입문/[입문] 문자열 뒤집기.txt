@@ -1,0 +1,14 @@
+// Q. 문자열 my_string이 매개변수로 주어집니다. my_string을 거꾸로 뒤집은 문자열을 return하도록 solution 함수를 완성해주세요.
+
+class Solution {
+    public String solution(String my_string) {
+        String answer = "";
+        int N = my_string.length(); // length 뒤에 괄호 확인
+        char[] chList = my_string.toCharArray();
+        for (int n = (N-1); n >= 0; n--) { // index는 0부터 시작하기 때문에 역순으로 하려면 (N-1)이 역순으로 했을 때 첫번째 index
+            System.out.println(my_string.charAt(n));
+            answer += my_string.charAt(n); // 중첩하기
+        }
+        return answer;
+    }
+}
